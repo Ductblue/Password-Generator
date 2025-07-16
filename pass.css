@@ -11,24 +11,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right bottom, #ffa585,#45c5d8);
-    color:#fff;
+    background: linear-gradient(to left top, #DA70D6,#66CDAA);
+    color:#000;
     font-weight: 600;
 }
 
 .container{
-    border: 0.5px solid #fff;
+    width: 600px;
+    border: 2px solid #000;
     border-radius: 10px;
     padding: 28px 32px;
     display: flex;
     flex-direction: column;
-    background: transparent;
-    box-shadow: 8px 8px 4px #909090, 8px 8px 0px #575757;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    /* background: transparent; */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .container h1{
     font-size: 1.4rem;
     margin-block: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
 }
 
 .inputBox{
@@ -37,12 +44,19 @@ body{
 
 .inputBox span{
     position: absolute;
-    top: 16px;
+    top: 20px;
     right: 6px;
     color: #000;
-    font-size: 28px;
+    font-size: 22px;
     cursor: pointer;
     z-index: 2;
+}
+
+.inputBox span:hover{
+    opacity: 0.9;
+    transform: scale(1.3);
+    transition: all 0.2s ease-in-out;
+    color: coral;
 }
 
 .passBox{
@@ -50,7 +64,7 @@ body{
     border: none;
     outline: none;
     padding: 10px;
-    width: 300px;
+    width: 100%;
     border-radius: 4px;
     font-size: 20px;
     margin-block: 8px;
@@ -84,6 +98,9 @@ body{
     border-radius: 4px;
 }
 
-.genBtn:hover{
-    background-color: #06264a;
+.genBtn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+  transition: all 0.2s ease-in-out;
+  background-color: #4169E1;
 }
